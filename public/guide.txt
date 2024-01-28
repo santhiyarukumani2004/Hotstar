@@ -1,0 +1,19 @@
+Follow the steps to setup Tailwindcss
+1.  use this command : npm init -y
+2.  follow the instruction provide by tailwind website 
+        use command : npm install -D tailwindcss
+        use command : npx tailwindcss init
+        content: ["./src/**/*.{html,js}"]src-->folder name of frondend like public
+                                         /**?-->subfolder {}-->files
+        create a new folder as name src->input.css=>tailwindcss+custom css---->tailwindcss+vanilla css == index.html
+3.  use command in terminal npx tailwindcss -i /.src/input.css -o ./public/style.css
+        it take the input.css as input and process the style.css as output
+4.  paste this command in package.json->script:build:"npx tailwindcss -i src/input.css -o public/style.css --watch" run in bacground
+5.  optional use command  npm install -D postcss-nesting|npx tailwindcss init
+
+
+
+
+ABOUT .gitignore
+ create inside main directory like above package.json
+ if suppose git not track gitignore then use this command git add .gitignore [also check cmd directory that is to be right]
